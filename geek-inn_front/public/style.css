@@ -1,0 +1,124 @@
+/* ************* */
+/* GENERAL */
+/* ************* */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #212529;
+  font-family: 'Lato', sans-serif;
+}
+body {
+  margin: 0 auto;
+  max-width: 1800px;
+}
+html {
+  height: 100%;
+}
+h2 {
+  font-size: 2em;
+}
+/* ************* */
+/* CARROUSSELS */
+/* ************* */
+section {
+  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@media (max-width:800px){
+  section {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.carroussel {
+  margin-top: 100px;
+}
+
+.carousel-items {
+  display: flex;
+  overflow-x: scroll;
+  padding: 1rem 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 350px;
+  flex: 1 0 350px;
+  scroll-snap-type: x mandatory;
+  list-style: none;
+}
+
+.carousel-item {
+  /* flex: 1 0 350px; */
+  margin-left: 3rem;
+  scroll-snap-align: start;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(9, 9, 9);
+  border-style: none;
+  border-width: 2px;
+  width: 300px;
+  height: auto;
+  /*  border-radius: 2em; */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3d4852;
+  border-radius: 3px;
+}
+/* ************* */
+/* CARROUSSEL CARDS */
+/* ************* */
+.card-list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+img {
+  max-width: 350px;
+}
+.card-image {
+  height: 250px;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+.date {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-content {
+  max-width: 350px;
+}
+.place-info {
+  background-color: white;
+  padding:30px;
+}
+/* ************* */
+/* COMMENT SECTION */
+/* ************* */
+.comment-section {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
